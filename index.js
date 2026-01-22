@@ -362,224 +362,224 @@ let file;
 
 // //readf("read.txt")
 
-setInterval( async function Updatetime () {
+// setInterval( async function Updatetime () {
 
-    let dt = new Date()
+//     let dt = new Date()
 
 
-    let days = dt.getDay();
-    let hours = dt.getHours()
-    let mns = dt.getMinutes()
-    let seconds = dt.getSeconds();
+//     let days = dt.getDay();
+//     let hours = dt.getHours()
+//     let mns = dt.getMinutes()
+//     let seconds = dt.getSeconds();
     
-    // Checks reminders
+//     // Checks reminders
 
-    let rdoc = fs.readFileSync("data/reminders.json");
-    let rcode = rdoc.toString()
-    let reminderdata = JSON.parse(rcode)  
+//     let rdoc = fs.readFileSync("data/reminders.json");
+//     let rcode = rdoc.toString()
+//     let reminderdata = JSON.parse(rcode)  
 
-    for (let i = 0; i < reminderdata.length; i++) {
+//     for (let i = 0; i < reminderdata.length; i++) {
         
-        if (reminderdata[i].days.includes(days) && reminderdata[i].hours == hours && reminderdata[i].minutes == mns && second == 0) {
-            client.channels.cache.get('1092212367485587476').send(`${reminderdata[i].text}`)
-        }
-    }
+//         if (reminderdata[i].days.includes(days) && reminderdata[i].hours == hours && reminderdata[i].minutes == mns && second == 0) {
+//             client.channels.cache.get('1092212367485587476').send(`${reminderdata[i].text}`)
+//         }
+//     }
 
 
-        //console.log(dt)
+//         //console.log(dt)
 
-        // console.log(days)
+//         // console.log(days)
 
-        if (days == 6 && hours == 1 && mns == 30 && seconds == 0) {
-            client.channels.cache.get("747969735978778686").send(`<@&796480360778563641> sign up for flex`);
-            client.channels.cache.get("747969735978778686").send(`<@&796480360778563641> sign up for flex`);
-        }
+//         if (days == 6 && hours == 1 && mns == 30 && seconds == 0) {
+//             client.channels.cache.get("747969735978778686").send(`<@&796480360778563641> sign up for flex`);
+//             client.channels.cache.get("747969735978778686").send(`<@&796480360778563641> sign up for flex`);
+//         }
         
         
-    //    console.log(`Time: ${hours}:${mns}:${seconds}`)
+//     //    console.log(`Time: ${hours}:${mns}:${seconds}`)
 
-        let ch = "730572904919465994"
+//         let ch = "730572904919465994"
 
-        // let person = client.users.cache.get("303279285219622914") 
+//         // let person = client.users.cache.get("303279285219622914") 
         
-            let arnav = await client.users.fetch("303279285219622914") 
-            let me =  await client.users.fetch("590420469862236160")
-            let cheta =  await client.users.fetch("332219771053539328")
-            let vick =  await client.users.fetch("439546060642320384")
-            let ap = await client.users.fetch("535242785888927764")
-            let dk =  await client.users.fetch("303277475998334976")
-            let dg =  await client.users.fetch("346434640535355413");
-            let adaada = await client.users.fetch("456466805058437122");
-            let tn =  await client.users.fetch("628059657784655905")
-            let franky = await client.users.fetch("776938990561263668")
+//             let arnav = await client.users.fetch("303279285219622914") 
+//             let me =  await client.users.fetch("590420469862236160")
+//             let cheta =  await client.users.fetch("332219771053539328")
+//             let vick =  await client.users.fetch("439546060642320384")
+//             let ap = await client.users.fetch("535242785888927764")
+//             let dk =  await client.users.fetch("303277475998334976")
+//             let dg =  await client.users.fetch("346434640535355413");
+//             let adaada = await client.users.fetch("456466805058437122");
+//             let tn =  await client.users.fetch("628059657784655905")
+//             let franky = await client.users.fetch("776938990561263668")
 
 
            
 
-            function dm (a, b) {
-                a.send(`${b}`)
-            }
+//             function dm (a, b) {
+//                 a.send(`${b}`)
+//             }
        
             
 
             
 
-//             // let arnav =("303279285219622914") 
-//             // let me = "590420469862236160")
-//             // let cheta = client.users.cache.get("332219771053539328")
-//             // let vick = client.users.cache.get("439546060642320384")
-//             // let ap = client.users.cache.get("535242785888927764")
-//             // let dk =  client.users.cache.get("303277475998334976")
-//             // let tn =  client.users.cache.get("628059657784655905")
-            try {
+// //             // let arnav =("303279285219622914") 
+// //             // let me = "590420469862236160")
+// //             // let cheta = client.users.cache.get("332219771053539328")
+// //             // let vick = client.users.cache.get("439546060642320384")
+// //             // let ap = client.users.cache.get("535242785888927764")
+// //             // let dk =  client.users.cache.get("303277475998334976")
+// //             // let tn =  client.users.cache.get("628059657784655905")
+//             try {
 
                 
 
                 
 
-//     //             if (hours == 6 && mns == 10 && seconds == 0) {
-//     //                 me.send('<@!590420469862236160> hello there, this is a test pls dm AB moment saying it works pls :)')
-//     //                   //arnav.send('<@!303279285219622914> hello there, this is a test pls dm AB moment saying it works pls :)')
-//     //             //      cheta.send('<@!332219771053539328> hello there, this is a test pls dm AB moment saying it works pls :)')
-//     //             // vick.send('<@!439546060642320384> hello there, this is a test pls dm AB moment saying it works pls :)')
-//     //             // ap.send('<@!535242785888927764> hello there, this is a test pls dm AB moment saying it works pls :)')
-//     //              dk.send('<@!303277475998334976> hello there, this is a test pls dm AB moment saying it works pls :)')
-//     //             }
+// //     //             if (hours == 6 && mns == 10 && seconds == 0) {
+// //     //                 me.send('<@!590420469862236160> hello there, this is a test pls dm AB moment saying it works pls :)')
+// //     //                   //arnav.send('<@!303279285219622914> hello there, this is a test pls dm AB moment saying it works pls :)')
+// //     //             //      cheta.send('<@!332219771053539328> hello there, this is a test pls dm AB moment saying it works pls :)')
+// //     //             // vick.send('<@!439546060642320384> hello there, this is a test pls dm AB moment saying it works pls :)')
+// //     //             // ap.send('<@!535242785888927764> hello there, this is a test pls dm AB moment saying it works pls :)')
+// //     //              dk.send('<@!303277475998334976> hello there, this is a test pls dm AB moment saying it works pls :)')
+// //     //             }
                 
                 
-//     //             if (day == 0 && hours == 17 && mns == 0 && seconds == 0){
-//     //                 arnav.send('<@!303279285219622914> Monday Schedule tmrw');
-//     //                  me.send('<@!590420469862236160> Monday Schedule tmrw');
-//     //                  cheta.send('<@!332219771053539328> Monday Schedule tmrw');
-//     //                  vick.send('<@!439546060642320384> Monday Schedule tmrw');
-//     //                  ap.send('<@!535242785888927764> Monday Schedule tmrw');
-//     //                  dk.send('<@!303277475998334976> Monday Schedule tmrw');
-//     //             }
+// //     //             if (day == 0 && hours == 17 && mns == 0 && seconds == 0){
+// //     //                 arnav.send('<@!303279285219622914> Monday Schedule tmrw');
+// //     //                  me.send('<@!590420469862236160> Monday Schedule tmrw');
+// //     //                  cheta.send('<@!332219771053539328> Monday Schedule tmrw');
+// //     //                  vick.send('<@!439546060642320384> Monday Schedule tmrw');
+// //     //                  ap.send('<@!535242785888927764> Monday Schedule tmrw');
+// //     //                  dk.send('<@!303277475998334976> Monday Schedule tmrw');
+// //     //             }
 
 
 
-//                     // Monday Schdule
-//                     // __________________________
-//                     if (day == 1 ) {
-//                         //Block 1
-//                         if (hours == 9 && mns == 13 && seconds == 30) {
+// //                     // Monday Schdule
+// //                     // __________________________
+// //                     if (day == 1 ) {
+// //                         //Block 1
+// //                         if (hours == 9 && mns == 13 && seconds == 30) {
 
-//                             arnav.send('<@!303279285219622914> Advisroy starts at 9:15');
-//                             me.send('<@!590420469862236160> Advisroy starts at 9:15');
-//                             cheta.send('<@!332219771053539328> Advisroy starts at 9:15');
-//                             vick.send('<@!439546060642320384> Advisroy starts at 9:15');
-//                             ap.send('<@!535242785888927764> Advisroy starts at 9:15');
-//                              dk.send('<@!303277475998334976> Advisroy starts at 9:15');
-//                         } 
+// //                             arnav.send('<@!303279285219622914> Advisroy starts at 9:15');
+// //                             me.send('<@!590420469862236160> Advisroy starts at 9:15');
+// //                             cheta.send('<@!332219771053539328> Advisroy starts at 9:15');
+// //                             vick.send('<@!439546060642320384> Advisroy starts at 9:15');
+// //                             ap.send('<@!535242785888927764> Advisroy starts at 9:15');
+// //                              dk.send('<@!303277475998334976> Advisroy starts at 9:15');
+// //                         } 
 
-//                         else if (hours == 13 && mns == 23 && seconds == 30) {
-//                             me.send("asdf")
-//                             dm(me, "kekekekek")
-//                         }
-//                     }
-//     //                     //Block 2
-//     //                     // else if (hours == 9 && mns == 48 && seconds == 30) {
+// //                         else if (hours == 13 && mns == 23 && seconds == 30) {
+// //                             me.send("asdf")
+// //                             dm(me, "kekekekek")
+// //                         }
+// //                     }
+// //     //                     //Block 2
+// //     //                     // else if (hours == 9 && mns == 48 && seconds == 30) {
 
-//     //                     //     arnav.send('<@!303279285219622914> 2nd block starts at 9:50');
-//     //                     //      me.send('<@!590420469862236160> 2nd block starts at 9:50');
-//     //                     //      cheta.send('<@!332219771053539328> 2nd block starts at 9:50');
-//     //                     //      vick.send('<@!439546060642320384> 2nd block starts at 9:50');
-//     //                     //      ap.send('<@!535242785888927764> 2nd block starts at 9:50');
-//     //                     //     dk.send('<@!303277475998334976> 1st block starts at 9:15');
+// //     //                     //     arnav.send('<@!303279285219622914> 2nd block starts at 9:50');
+// //     //                     //      me.send('<@!590420469862236160> 2nd block starts at 9:50');
+// //     //                     //      cheta.send('<@!332219771053539328> 2nd block starts at 9:50');
+// //     //                     //      vick.send('<@!439546060642320384> 2nd block starts at 9:50');
+// //     //                     //      ap.send('<@!535242785888927764> 2nd block starts at 9:50');
+// //     //                     //     dk.send('<@!303277475998334976> 1st block starts at 9:15');
                         
-//     //                     // }
-//     //                     // //Block 3
-//     //                     // else if (hours == 10 && mns == 33 && seconds == 30) {
+// //     //                     // }
+// //     //                     // //Block 3
+// //     //                     // else if (hours == 10 && mns == 33 && seconds == 30) {
 
-//     //                     //     arnav.send('<@!303279285219622914> 3rd block starts at 10:35');
-//     //                     //      me.send('<@!590420469862236160> 3rd block starts at 10:35');
-//     //                     //      cheta.send('<@!332219771053539328> 3rd block starts at 10:35');
-//     //                     //      vick.send('<@!439546060642320384> 3rd block starts at 10:35');
-//     //                     //      ap.send('<@!535242785888927764> 3rd block starts at 10:35');
-//     //                     //      dk.send('<@!303277475998334976> 3rd block starts at 10:35');
-//     //                     // }
-//     //                     // //Block 4
-//     //                     // else if (hours == 11 && mquotesns == 8 && seconds == 30) {
+// //     //                     //     arnav.send('<@!303279285219622914> 3rd block starts at 10:35');
+// //     //                     //      me.send('<@!590420469862236160> 3rd block starts at 10:35');
+// //     //                     //      cheta.send('<@!332219771053539328> 3rd block starts at 10:35');
+// //     //                     //      vick.send('<@!439546060642320384> 3rd block starts at 10:35');
+// //     //                     //      ap.send('<@!535242785888927764> 3rd block starts at 10:35');
+// //     //                     //      dk.send('<@!303277475998334976> 3rd block starts at 10:35');
+// //     //                     // }
+// //     //                     // //Block 4
+// //     //                     // else if (hours == 11 && mquotesns == 8 && seconds == 30) {
 
-//     //                     //     arnav.send('<@!303279285219622914> 4th block starts at 11:10');
-//     //                     //      me.send('<@!590420469862236160> 4th block starts at 11:10');
-//     //                     //      cheta.send('<@!332219771053539328> 4th block starts at 11:10');
-//     //                     //      vick.send('<@!439546060642320384> 4th block starts at 11:10');
-//     //                     //      ap.send('<@!535242785888927764> 4th block starts at 11:10');
-//     //                    //      dk.send('<@!303277475998334976> 4th block starts at 11:10');
-//                       // }
+// //     //                     //     arnav.send('<@!303279285219622914> 4th block starts at 11:10');
+// //     //                     //      me.send('<@!590420469862236160> 4th block starts at 11:10');
+// //     //                     //      cheta.send('<@!332219771053539328> 4th block starts at 11:10');
+// //     //                     //      vick.send('<@!439546060642320384> 4th block starts at 11:10');
+// //     //                     //      ap.send('<@!535242785888927764> 4th block starts at 11:10');
+// //     //                    //      dk.send('<@!303277475998334976> 4th block starts at 11:10');
+// //                       // }
                     
-                // ___________________________ 
-            //     if (1 < day  && day< 6) {
-            //         if (hours == 8 && mns == 28 && seconds == 30){
-            //             console.log(day)
-            //             arnav.send('<@!303279285219622914> 1st block starts at 8:30');
-            //             me.send('<@!590420469862236160> 1st block starts at 8:30');
-            //              cheta.send('<@!332219771053539328> 1st block starts at 8:30');
-            //             // vick.send('<@!439546060642320384> 1st block starts at 8:30');
-            //             ap.send('<@!535242785888927764> 1st block starts at 8:30');
-            //           //  dk.send('<@!303277475998334976> 1st block starts at 8:30');
-            //             dg.send('<@!346434640535355413> 1st block starts at 8:30');
-            //             adaada.send('<@!456466805058437122> 1st block starts at 8:30');
-            //             franky.send("<@!776938990561263668> 1st block starts at 8:30 ")
-            //             // arnav.send('<@!303279285219622914> sorry for system failure');
-            //             //  me.send('<@!590420469862236160> sorry for system failure');
-            //             //  cheta.send('<@!332219771053539328> sorry for system failure');
-            //             //  vick.send('<@!439546060642320384> sorry for system failure')
-            //         }
-            //         else if (hours == 9 && mns == 30 && seconds == 30){
-            //             arnav.send('<@!303279285219622914> 2nd block starts at 9:32');
-            //              me.send('<@!590420469862236160> 2nd block starts at 9:32');
-            //              cheta.send('<@!332219771053539328> 2nd block starts at 9:32');
-            //            //  vick.send('<@!439546060642320384> 2nd block starts at 9:32');
-            //              ap.send('<@!535242785888927764> 2nd block starts at 9:32');
-            //           //  dk.send('<@!303277475998334976> 2nd block starts at 9:32');
-            //             dg.send('<@!346434640535355413> 2nd block starts at 9:32');
-            //             adaada.send('<@!456466805058437122> 2nd block starts at 9:32');
-            //             franky.send("<@!776938990561263668> 2nd block starts at 9:32 ")
-            //                 me.send("msgs sent for 2nd block")
-            //         }
-            //          else if (hours == 10 && mns == 32 && seconds == 30){
-            //             arnav.send('<@!303279285219622914> 3rd block starts at 10:34');
-            //              me.send('<@!590420469862236160> 3rd block starts at 10:34')
-            //              cheta.send('<@!332219771053539328> 3rd block starts at 10:34')
-            //             // vick.send('<@!439546060642320384> 3rd block starts at 10:34')
-            //              ap.send('<@!535242785888927764> 3rd block starts at 10:34')
-            //             // dk.send('<@!303277475998334976> 3rd block starts at 10:34')
-            //              dg.send('<@!346434640535355413> 3rd block starts at 10:34');
-            //              adaada.send('<@!456466805058437122> 3rd block starts at 10:34');
-            //             franky.send("<@!776938990561263668> 3rd block starts at 10:34")
-            //              me.send("msgs sent for 3rd block")
-            //             }
-            //         else if (hours == 11 && mns == 34 && seconds == 30){
-            //             arnav.send('<@!303279285219622914> 4th block starts at 11:36');
-            //              me.send('<@!590420469862236160> 4th block starts at 11:36')
-            //              cheta.send('<@!332219771053539328> 4th block starts at 11:36')
-            //             // vick.send('<@!439546060642320384> 4th block starts at 11:36')
-            //              ap.send('<@!535242785888927764> 4th block starts at 11:36')
-            //              dg.send('<@!346434640535355413> 4th block starts at 11:36');
-            //              adaada.send('<@!456466805058437122> 4th block starts at 11:36');
-            //             franky.send("<@!776938990561263668> 4th block starts at 11:36")
-            //              // dk.send('<@!303277475998334976> 4th block starts at 1:30')
-            //             // tn.send('<@!628059657784655905> Trevor The rex 😉, 4th block starts at 1:30')
-            //              me.send("msgs sent for 4th block")
-            //             }
-            //         // else if (hours == 12 & mns == 52 && seconds == 20) {
-            //         //     me.send("<@!590420469862236160> asfdlajksfdj;lakjsfd");
-            //         // }
-            //         }
+//                 // ___________________________ 
+//             //     if (1 < day  && day< 6) {
+//             //         if (hours == 8 && mns == 28 && seconds == 30){
+//             //             console.log(day)
+//             //             arnav.send('<@!303279285219622914> 1st block starts at 8:30');
+//             //             me.send('<@!590420469862236160> 1st block starts at 8:30');
+//             //              cheta.send('<@!332219771053539328> 1st block starts at 8:30');
+//             //             // vick.send('<@!439546060642320384> 1st block starts at 8:30');
+//             //             ap.send('<@!535242785888927764> 1st block starts at 8:30');
+//             //           //  dk.send('<@!303277475998334976> 1st block starts at 8:30');
+//             //             dg.send('<@!346434640535355413> 1st block starts at 8:30');
+//             //             adaada.send('<@!456466805058437122> 1st block starts at 8:30');
+//             //             franky.send("<@!776938990561263668> 1st block starts at 8:30 ")
+//             //             // arnav.send('<@!303279285219622914> sorry for system failure');
+//             //             //  me.send('<@!590420469862236160> sorry for system failure');
+//             //             //  cheta.send('<@!332219771053539328> sorry for system failure');
+//             //             //  vick.send('<@!439546060642320384> sorry for system failure')
+//             //         }
+//             //         else if (hours == 9 && mns == 30 && seconds == 30){
+//             //             arnav.send('<@!303279285219622914> 2nd block starts at 9:32');
+//             //              me.send('<@!590420469862236160> 2nd block starts at 9:32');
+//             //              cheta.send('<@!332219771053539328> 2nd block starts at 9:32');
+//             //            //  vick.send('<@!439546060642320384> 2nd block starts at 9:32');
+//             //              ap.send('<@!535242785888927764> 2nd block starts at 9:32');
+//             //           //  dk.send('<@!303277475998334976> 2nd block starts at 9:32');
+//             //             dg.send('<@!346434640535355413> 2nd block starts at 9:32');
+//             //             adaada.send('<@!456466805058437122> 2nd block starts at 9:32');
+//             //             franky.send("<@!776938990561263668> 2nd block starts at 9:32 ")
+//             //                 me.send("msgs sent for 2nd block")
+//             //         }
+//             //          else if (hours == 10 && mns == 32 && seconds == 30){
+//             //             arnav.send('<@!303279285219622914> 3rd block starts at 10:34');
+//             //              me.send('<@!590420469862236160> 3rd block starts at 10:34')
+//             //              cheta.send('<@!332219771053539328> 3rd block starts at 10:34')
+//             //             // vick.send('<@!439546060642320384> 3rd block starts at 10:34')
+//             //              ap.send('<@!535242785888927764> 3rd block starts at 10:34')
+//             //             // dk.send('<@!303277475998334976> 3rd block starts at 10:34')
+//             //              dg.send('<@!346434640535355413> 3rd block starts at 10:34');
+//             //              adaada.send('<@!456466805058437122> 3rd block starts at 10:34');
+//             //             franky.send("<@!776938990561263668> 3rd block starts at 10:34")
+//             //              me.send("msgs sent for 3rd block")
+//             //             }
+//             //         else if (hours == 11 && mns == 34 && seconds == 30){
+//             //             arnav.send('<@!303279285219622914> 4th block starts at 11:36');
+//             //              me.send('<@!590420469862236160> 4th block starts at 11:36')
+//             //              cheta.send('<@!332219771053539328> 4th block starts at 11:36')
+//             //             // vick.send('<@!439546060642320384> 4th block starts at 11:36')
+//             //              ap.send('<@!535242785888927764> 4th block starts at 11:36')
+//             //              dg.send('<@!346434640535355413> 4th block starts at 11:36');
+//             //              adaada.send('<@!456466805058437122> 4th block starts at 11:36');
+//             //             franky.send("<@!776938990561263668> 4th block starts at 11:36")
+//             //              // dk.send('<@!303277475998334976> 4th block starts at 1:30')
+//             //             // tn.send('<@!628059657784655905> Trevor The rex 😉, 4th block starts at 1:30')
+//             //              me.send("msgs sent for 4th block")
+//             //             }
+//             //         // else if (hours == 12 & mns == 52 && seconds == 20) {
+//             //         //     me.send("<@!590420469862236160> asfdlajksfdj;lakjsfd");
+//             //         // }
+//             //         }
 
                     
                 
         
-        } catch(err) {
+//         } catch(err) {
 
-      }
+//       }
 
         
-      }, 1000) //setInterval(Updatetime, 1000)
+//       }, 1000) //setInterval(Updatetime, 1000)
     
-//         try {Updatetime();}
+// //         try {Updatetime();}
 //         catch(err) {
 
 //         }
