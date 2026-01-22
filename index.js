@@ -1,4 +1,6 @@
 //7-7-2020 -- 
+require('dotenv').config();
+
 const x = "2"
 let y = "4"
 
@@ -95,7 +97,7 @@ for (const file of commandFiles) {
 }
 
 // Token will not work, and will not be revealed for security reasons.
-const token = "";
+const token = process.env.DISCORD_TOKEN;
 
 
 // COOLDOWN 8-10-2020
